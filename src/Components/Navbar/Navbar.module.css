@@ -1,0 +1,152 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 16px;
+    height: 75px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: sticky;
+    z-index: 1000;
+    outline: none;
+}
+.navMenu {
+    display:flex;
+    align-items: center;
+    list-style: none;
+    gap: 48px;
+    color: #626262;
+    font-size: 16px;
+    font-weight: 500;
+}
+.navLogo img{
+    width: 56px;
+}
+.navMenu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 4px;
+}
+.navMenu li a{
+    font-size: 12px;
+    text-align: center;
+    color: #626262;
+}
+.menuUnderline{
+    width: 80%;
+    height: 2px;
+    background-color: black;
+}
+.navLoginCart {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.navLoginCart i {
+    font-size: 24px;
+    color: #626262;
+}
+.navLoginCart button {
+    font-family: "Poppins";
+    font-size: 12px;
+    font-weight: 500;
+    width: 80px;
+    height: 40px;
+    outline: none;
+    border: 1.5px solid #626262;
+    border-radius: 48px;
+    color: #626262;
+    background-color: transparent;
+    cursor: pointer;
+}
+.navLoginCart button:active {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    scale: 0.95;
+}
+.navCartCount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    margin: -35px 0 0 -35px;
+    border-radius: 50%;
+    font-size: 14px;
+    background-color: crimson;
+    color: white;
+}
+.navButton{
+    display: none;
+}
+.navButton i{
+    color: black;
+    width: 24px;
+    height: 24px;
+}
+.navMenuMobile{
+    display: none;
+}
+.cartNotif{
+    display: flex;
+    gap: 16px;
+}
+.navCartCountSmall{
+    background-color: crimson;
+    outline: none;
+    border: none;
+    width: 30px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .navbar {
+        justify-content: space-between;
+    }
+    .navMenu {
+        display: none;
+    }
+    .navLoginCart{
+        display: none;
+    }
+    .navMenuMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 75px;
+        right: 0px;
+        width: 300px;
+        height: 100vh;
+        background-color: white;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 40px 0 0 16px;
+        transition: all 0.3s ease-in-out;
+    }
+    .navMenuMobile.active {
+        right: 0px;
+    }
+    .navMobile li{
+        width: 280px;
+        list-style: none;
+        padding: 16px 0;
+    }
+    .navMobile li a{
+        font-size: 12px;
+        text-align: center;
+        color: #626262;
+    }
+    .navButton{
+        display: block;
+    }
+}

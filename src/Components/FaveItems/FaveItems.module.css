@@ -1,0 +1,265 @@
+.emptyFave {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    height: auto;
+    padding: 5vw;
+    margin: 5vw 0;
+}
+.emptyFave a {
+    color: black;
+    cursor: pointer;
+}
+.emptyFave img {
+    width: 500px;
+}
+.faveitemsHolder{
+    height: auto;
+    padding:100px 160px;
+}
+.faveitemsHolder hr {
+    height: 2px;
+    background-color: #e2e2e2;
+    border: 0;
+}
+.faveitemsFormatMobile,
+.faveitemsFormatSmallMobile {
+    display: none;
+}
+.faveitemsFormatMain{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1fr;
+    align-items: center;
+    gap: 3.3333vw;
+    padding: 20px 0;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 600;
+}
+.faveitemsFormat{
+    font-size: 16px;
+    font-weight: 500; 
+}
+.faveIconProductIcon{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.faveIconRemove{
+    width: 24px;
+    margin: 0px 36px;
+    cursor: pointer;
+}
+.faveItemsQuantity {
+    width: 64px;
+    height: 48px;
+    border: 2px solid #ebebeb;
+    background: white;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+.faveitemsDown {
+    display: flex;
+    margin: 100px 0px;
+}
+.faveitemsTotal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 180px;
+    gap: 40px;
+}
+.faveitemsTotalItem{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+.faveitemsTotal button{
+    width: 260px;
+    height: 48px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.faveitemsPromoCode{
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+}
+.faveitemsPromoCode p{
+    color: #555;
+}
+.faveitemsPromoBox{
+    width: 500px;
+    margin-top: 16px;
+    padding-left: 20px;
+    height: 56px;
+    background-color: #eaeaea;
+}
+.faveitemsPromoBox input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    width: 320px;
+    height: 48px;
+}
+.faveitemsPromoBox button{
+    outline: none;
+    border: none;
+    width: 160px;
+    height: 56px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+    .emptyfave {
+        height: 70vw;
+    }
+    .emptyFave img {
+        width: 50vw;
+    }
+    .faveitemsHolder{
+        padding: 5vw;
+    }
+    .faveitemsFormatMain{
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        align-items: center;
+        gap: 3.3333vw;
+        padding: 20px 0;
+        color: #454545;
+        font-size: 18px;
+        font-weight: 600;
+    }   
+    .faveitemsHolder hr,
+    .faveitemsFormatMain,
+    .faveitemsFormat {
+        width: 90vw;
+    }
+    .faveProductHolder {
+        width: 90vw;
+        overflow-x: hidden;
+    }
+    .faveIconProductIcon{
+        width: 33.363vw;
+        height: 33.363vw;
+    }
+    .faveitemsDown {
+        width: 90vw;
+    }
+    .faveitemsTotal hr {
+        width: 100%;
+    }
+    .faveitemsTotal {
+        margin-right: 5vw;
+    }
+    .faveitemsPromoCode{
+        width: 400px;
+    }
+    .faveitemsPromoBox {
+        width: 100%;
+    }
+    .faveitemsPromoBox input{
+        width: 70%
+    }
+    .faveitemsPromoBox button{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .faveProductHolder {
+        display: none;
+    }
+    .faveitemsFormatMain{
+        display: none;
+    }
+    .faveitemsFormatMobile{
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr 1fr;
+        align-items: center;
+        gap: 3.333vw;
+        padding: 20px 0;
+        color: #454545;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .faveitemsFormat{
+        display: grid;
+        font-size: 12px;
+        font-weight: 500; 
+    }
+    .faveItemsQuantity {
+        width: 48px;
+        height: 48px;
+        border: 2px solid #ebebeb;
+        background: white;
+        color: black;
+        font-size: 12px;
+    }
+    .faveRemoveBtn {
+        height: 36px;
+        width: 100%;
+        background-color: black;
+        color: white;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+    }
+}
+@media screen and (max-width: 425px) {
+    .faveitemsFormatMobile {
+        display: none;
+    }
+    .faveitemsFormatSmallMobile{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        gap: 3.333vw;
+        padding: 20px 0;
+        color: #454545;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .faveitemsFormatSmall{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3.333vw;
+        font-size: 12px;
+        font-weight: 500; 
+    }
+    .faveIconProductIconSmall {
+        width: 84px;
+        height: 84px;
+    }
+    .namePriceQuantity {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2vw;
+    }
+    .priceQuantity {
+        display: flex;
+        margin-top: 12px;
+        gap: 12.5vw;
+        align-items: center;
+    }
+    .faveItemsQuantitySmall{
+        width: 24px;
+        height: 24px;
+        background-color: white;
+        border: 2px solid #ebebeb;
+        color: black;
+        font-size: 12px;
+        font-weight: 700;
+    }
+}

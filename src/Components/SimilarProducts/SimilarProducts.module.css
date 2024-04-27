@@ -1,0 +1,45 @@
+.similarProducts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vw;
+    align-items: center;
+    gap: 8px;
+}
+.similarProducts h1{
+    color: #171717;
+    font-size: 36px;
+    font-weight: 600;
+}
+.similarProducts hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 8px;
+    background-color: #252525;
+}
+.similarProductsItem {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .similarProductsItem {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .similarProducts h1{
+        font-size: 20px;
+    }
+    .similarProducts hr {
+        width: 120px;
+        height: 4px;
+        border-radius: 4px;
+    }
+    .similarProductsItem {
+        display: block;
+    }
+}
