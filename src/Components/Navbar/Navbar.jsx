@@ -21,7 +21,6 @@ function Navbar() {
         <div className={styles.navbar}>
             <div className={styles.navLogo}>
                     <Link to='/' onClick={() => { setMenu("shop") }}><img src={logo} alt="" /></Link>
-                    Hello World
             </div>
             <ul className={styles.navMenu}>
                 <li onClick={() => { setMenu("shoesAndSlides") }}>
