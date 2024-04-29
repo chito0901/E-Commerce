@@ -8,8 +8,8 @@
     cursor: pointer;
 }
 .showcaseItem img {
-    width: 16.145833vw;
-    height: 16.145833vw;
+    width: 16.569vw;
+    height: 16.569vw;
     object-fit: cover;
 }
 .showcaseItem h2 {
@@ -19,8 +19,12 @@
 .showcaseItemPrices {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 14px;
     margin: 8px 0px;
+}
+.showcaseItemPrices p{
+    width: 70%;
 }
 @media screen and (max-width: 768px){
     .showcaseItem {
