@@ -1,8 +1,11 @@
 .emptyFave {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-size: 16px;
-    height: auto;
+    height: 68.050vh;
     padding: 5vw;
     margin: 5vw 0;
 }
@@ -120,9 +123,6 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .emptyfave {
-        height: 70vw;
-    }
     .emptyFave img {
         width: 50vw;
     }
